@@ -1,0 +1,34 @@
+<list>
+    <listname>123</listname>
+    <type>my_profile</type>
+    <subject>a list example</subject>
+    <description />
+    <status>open</status>
+    <shared_edit>editor</shared_edit>
+    <shared_read>private</shared_read>
+    <language>fr</language>
+    <owner multiple="1">
+        <email>serge.aumont@cru.fr</email>
+        <gecos>C.R.U.</gecos>
+    </owner>
+    <owner multiple="1">
+        <email>olivier.salaun@cru.fr</email>
+    </owner>
+    <owner_include multiple="1">
+        <source>my_file</source>
+    </owner_include>
+    <moderator>
+        <email>user@domain.org</email>
+    </moderator>
+    <topic>Computing</topic>
+    <sql>
+        <type>Oracle</type>
+        <host>sqlserv.admin.univ-x.fr</host>
+        <port>1521</port>
+        <user>stdutilisateur</user>
+        <pwd>monsecret</pwd>
+        <name>les_etudiants</name>
+        <env>ORACLE_HOME=/[oracle_path]</env>
+        <query>123</query>
+    </sql>
+</list>
