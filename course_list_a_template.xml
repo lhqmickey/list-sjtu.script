@@ -1,13 +1,14 @@
+<?xml version="1.0" ?>
 <list>
-    <listname>ee101-1</listname>
+    <listname></listname>
     <type>course_list_a</type>
-    <subject>ee101-1 Course Announcement List</subject>
+    <subject></subject>
     <status>open</status>
     <owner multiple="1">
-        <email />
+        <email></email>
     </owner>
     <owner_include multiple="1">
-        <source>/usr/local/sympa/etc/data_sources/ee101-1</source>
+        <source></source>
     </owner_include>
     <topic>Course Announecement List</topic>
     <sql>
@@ -16,6 +17,6 @@
         <user>sympatest</user>
         <pwd>sympatest</pwd>
         <name>test</name>
-        <query>SELECT student.email FROM `ee101-1`,student WHERE `ee101-1`.sid = student.sid</query>
+        <query></query>
     </sql>
 </list>

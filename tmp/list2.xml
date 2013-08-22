@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<list>
+    <listname>dynamic_list3</listname>
+    <type>discussion_list</type>
+    <subject>a list example</subject>
+    <description/>
+    <status>open</status>
+    <shared_edit>editor</shared_edit>
+    <shared_read>private</shared_read>
+    <language>en</language>
+    <owner multiple="1">
+        <email>lhq.mickey@gmail.com</email>
+    </owner>
+    <topic>Computing</topic>
+    <sql>
+        <type>mysql</type>
+        <host>localhost</host>
+        <user>sympatest</user>
+        <pwd>sympatest</pwd>
+	<name>test</name>
+        <query>SELECT student.email FROM `cs101-1`,student WHERE `cs101-1`.SID=student.SID</query>
+    </sql>
+</list>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<list>
+    <listname>example</listname>
+    <type>discussion_list</type>
+    <subject>a list example</subject>
+    <description/>
+    <status>open</status>
+    <shared_edit>editor</shared_edit>
+    <shared_read>private</shared_read>
+    <language>zh_CN</language>
+    <owner multiple="1">
+        <email>lhq.mickey@gmail.com</email>
+    </owner>
+    <owner multiple="1">
+        <email>lhq_mickey@sjtu.edu.cn</email>
+    </owner>
+    <topic>Computing</topic>
+</list>

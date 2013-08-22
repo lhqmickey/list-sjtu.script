@@ -1,13 +1,13 @@
 <list>
-    <listname>ee101-1</listname>
+    <listname>cs101-1</listname>
     <type>course_list_a</type>
-    <subject>ee101-1 Course Announcement List</subject>
+    <subject>cs101-1 Course Announcement List</subject>
     <status>open</status>
     <owner multiple="1">
         <email />
     </owner>
     <owner_include multiple="1">
-        <source>/usr/local/sympa/etc/data_sources/ee101-1</source>
+        <source>/usr/local/sympa/etc/data_sources/cs101-1</source>
     </owner_include>
     <topic>Course Announecement List</topic>
     <sql>
@@ -16,6 +16,6 @@
         <user>sympatest</user>
         <pwd>sympatest</pwd>
         <name>test</name>
-        <query>SELECT student.email FROM `ee101-1`,student WHERE `ee101-1`.sid = student.sid</query>
+        <query>SELECT student.email FROM `cs101-1`,student WHERE `cs101-1`.sid = student.sid</query>
     </sql>
 </list>

@@ -1,0 +1,6 @@
+include_sql_query
+db_type mysql
+host localhost
+user sympatest
+passwd sympatest
+db_name test
