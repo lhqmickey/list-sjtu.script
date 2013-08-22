@@ -1,0 +1,18 @@
+<list>
+    <listname>ee101-1</listname>
+    <type>course_list_a</type>
+    <subject>ee101-1 Course Announcement List</subject>
+    <status>open</status>
+    <owner_include>
+        <source>ee101-1</source>
+    </owner_include>
+    <topic>Course Announecement List</topic>
+    <sql>
+        <type>mysql</type>
+        <host>localhost</host>
+        <user>sympatest</user>
+        <pwd>sympatest</pwd>
+        <name>test</name>
+        <query>SELECT student.email FROM `ee101-1`,student WHERE `ee101-1`.sid = student.sid</query>
+    </sql>
+</list>

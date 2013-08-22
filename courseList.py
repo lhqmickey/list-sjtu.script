@@ -34,9 +34,6 @@ for row in rows:
 		listname.text = courseID
 		subject = root.find('subject')
 		subject.text = courseID + " Course Announcement List"
-		# editor_include = root.find('editor_include')
-		# editor_source = editor_include.find('source')
-		# editor_source = "/home/sympa/incl/%s"%(courseID)
 		# editor email (select)
 		inclTemplate = open('inclTemplate.incl','r')
 		inclFile = open("/usr/local/sympa/etc/data_sources/"+courseID+".incl",'w')
@@ -55,7 +52,7 @@ for row in rows:
 		
 		# write the XML file
                 tree.write('current.xml')
-		tree.write(courseID+'.xml')
+		# tree.write(courseID+'.xml')
 
 		# create list
 		# subprocess.call("/usr/local/sympa/bin/sympa.pl --create_list --input_file /usr/local/sympa/script/current.xml")

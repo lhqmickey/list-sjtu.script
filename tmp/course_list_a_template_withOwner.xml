@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<list>
+    <listname></listname>
+    <type>course_list_a</type>
+    <subject></subject>
+    <status>open</status>
+    <owner multiple="1">
+        <email>lists.sjtu@gmail.com</email>
+    </owner>
+    <owner_include multiple="1">
+        <source></source>
+    </owner_include>
+    <topic>Course Announecement List</topic>
+    <sql>
+        <type>mysql</type>
+        <host>localhost</host>
+        <user>sympatest</user>
+        <pwd>sympatest</pwd>
+        <name>test</name>
+        <query></query>
+    </sql>
+</list>
