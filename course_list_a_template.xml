@@ -4,10 +4,7 @@
     <type>course_list_a</type>
     <subject></subject>
     <status>open</status>
-    <owner multiple="1">
-        <email></email>
-    </owner>
-    <owner_include multiple="1">
+    <owner_include>
         <source></source>
     </owner_include>
     <topic>Course Announecement List</topic>

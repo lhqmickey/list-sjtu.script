@@ -3,11 +3,8 @@
     <type>course_list_a</type>
     <subject>cs101-1 Course Announcement List</subject>
     <status>open</status>
-    <owner multiple="1">
-        <email />
-    </owner>
-    <owner_include multiple="1">
-        <source>/usr/local/sympa/etc/data_sources/cs101-1</source>
+    <owner_include>
+        <source>cs101-1</source>
     </owner_include>
     <topic>Course Announecement List</topic>
     <sql>

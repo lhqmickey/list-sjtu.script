@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import MySQLdb
 import xml.etree.ElementTree as ET
+import subprocess
+import os
 
 # connect to the database
 db = MySQLdb.connect(host="localhost",
@@ -40,10 +42,12 @@ for row in rows:
 		inclFile = open("/usr/local/sympa/etc/data_sources/"+courseID+".incl",'w')
 		inclFile.write(inclTemplate.read())
 		# inclFile.write("sql_query SELECT instructor.email FROM instructor,courseList WHERE instructor.id = %s"%instructorID)
-		inclFile.write("sql_query SELECT email FROM instructor WHERE id = %s"%instructorID)
+		inclFile.write("sql_query SELECT instructor.email FROM instructor,courseList WHERE instructor.id = courseList.instructor AND courseList.id = '%s'"%courseID)
+		inclTemplate.close();
+		inclFile.close();
 		owner_include = root.find('owner_include')
 		owner_source = owner_include.find('source')
-		owner_source.text = "/usr/local/sympa/etc/data_sources/%s"%(courseID)
+		owner_source.text = courseID
 		# create that owner_include incl file
 		sql = root.find('sql')
 		query = sql.find('query')
@@ -54,9 +58,10 @@ for row in rows:
 		tree.write(courseID+'.xml')
 
 		# create list
-		# subprocess.call("/usr/local/sympa/bin/sympa.pl --create_list --input_file /home/sympa/current.xml")
+		# subprocess.call("/usr/local/sympa/bin/sympa.pl --create_list --input_file /usr/local/sympa/script/current.xml")
+		os.system("/usr/local/sympa/bin/sympa.pl --create_list --input_file /usr/local/sympa/script/current.xml")
 
 		# indicate as created
-		# cur.execute("UPDATE courseList SET listCreated = 'true' WHERE id = %s",(courseID))
+		# cur.execute("UPDATE courseList SET listCreated = 1 WHERE id = '%s'",(courseID))
 
 db.close()

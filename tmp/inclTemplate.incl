@@ -4,4 +4,3 @@ host localhost
 user sympatest
 passwd sympatest
 db_name test
-I Love CaiC
