@@ -59,6 +59,7 @@ for row in rows:
 		os.system("/usr/local/sympa/bin/sympa.pl --create_list --input_file /usr/local/sympa/script/current.xml")
 
 		# indicate as created
-		# cur.execute("UPDATE courseList SET listCreated = 1 WHERE id = '%s'",(courseID))
+		cur.execute("UPDATE courseList SET listCreated = 1 WHERE id = '%s'"%courseID)
+		db.commit()
 
 db.close()
